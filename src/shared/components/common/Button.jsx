@@ -1,6 +1,6 @@
 import { TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { COLORS, SPACING, FONT_SIZE } from '../constants/theme';
-
+ 
 const Button = ({
     title,
     onPress,
@@ -10,7 +10,7 @@ const Button = ({
     ...props
 }) => {
     const isSecondary = variant === "secondary";
-
+ 
     return (
         <TouchableOpacity
             style={[
@@ -33,11 +33,11 @@ const Button = ({
                     style={styles.text}>{title}</Text>
             )}
         </TouchableOpacity>
-
+ 
     )
 }
-
-
+ 
+ 
 const styles = StyleSheet.create({
     button: {
         paddingVertical: SPACING.md,
@@ -68,5 +68,5 @@ const styles = StyleSheet.create({
         color: COLORS.primary,
     },
 });
-
+ 
 export default Button;

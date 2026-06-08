@@ -1,26 +1,26 @@
 import { View, ActivityIndicator, StyleSheet, Text } from 'react-native';
 import { COLORS, SPACING, FONT_SIZE } from '../constants/theme';
-
+ 
 export const LoadingSpinner = () => (
-    <View > 
+    <View >
         <ActivityIndicator size="large" color={COLORS.primary} />
     </View>
 )
-
-
+ 
+ 
 export const EmptyState = ({ message = "No datos disponibles" }) => (
     <View style={styles.center}>
         <Text style={styles.emptyText}>{message}</Text>
     </View>
 )
-
-
+ 
+ 
 export const Card = ({ children, style }) => (
     <View style={[styles.card, style]}>
         {children}
     </View>
-)   
-
+)  
+ 
 const styles = StyleSheet.create({
     center: {
         flex: 1,
@@ -47,4 +47,3 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
 });
- 

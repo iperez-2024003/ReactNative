@@ -1,6 +1,6 @@
 import { TextInput, StyleSheet } from 'react-native';
 import { COLORS, SPACING, FONT_SIZE } from '../constants/theme';
-
+ 
 const Input = ({Label, error, ...props}) => {
     return (
         <View style={styles.container}>
@@ -12,7 +12,7 @@ const Input = ({Label, error, ...props}) => {
             />
             {error && <Text style={styles.errorText}>{error}</Text>}
         </View>
-
+ 
     )
 }
 const styles = StyleSheet.create({
